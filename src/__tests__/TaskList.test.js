@@ -22,8 +22,10 @@
 //   { id: 7, text: 'Task 7' },
 // ];
 
-import React from 'react';
+// import React from 'react';
 import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom'; // Add this import
+
 import Task from '../components/Task';
 
 test("displays the task text", () => {
@@ -32,7 +34,7 @@ test("displays the task text", () => {
   expect(screen.queryByText("text!")).toBeInTheDocument();
 });
 import React from 'react';
-import { render } from '@testing-library/react';
+// import { render } from '@testing-library/react';
 import TaskList from '../components/TaskList';
 
 const TASKS = [

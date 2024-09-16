@@ -45,7 +45,7 @@
 //   expect(screen.queryByText("Buy rice")).toBeInTheDocument();
 // });
 
-import React from 'react';
+// import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect'; // Import this to use toBeInTheDocument
 import CategoryFilter from '../components/CategoryFilter';
